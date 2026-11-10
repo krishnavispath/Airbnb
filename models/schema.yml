@@ -33,7 +33,7 @@ models:
                 values: ['Entire home/apt', 'Private room', 'Shared room', 'Hotel room']
 
       - name: minimum_nights
-        description: "This column indicates the minimum number of nights a guest can stay"
+        description: '{{ doc("dim_listings_cleansed_minimum_nights") }}'
         data_tests:
           - check_negative_values:
               name: dim_listings_cleansed_minimum_nights_check_negative_values
